@@ -68,14 +68,14 @@
     "eject": "react-scripts eject",
     "stage": "serve -s build",
     "watch": "tsc -watch",
-    "lint-js": "npx eslint ./*.js --fix-dry-run",
-    "lint-ts": "npx eslint src/**/*.ts --fix-dry-run",
-    "lint-tsx": "npx eslint src/**/*.tsx --fix-dry-run",
-    "lint:fix-js": "npx eslint ./*.js --fix",
-    "lint:fix-ts": "npx eslint src/**/*.ts --fix",
-    "lint:fix-tsx": "npx eslint src/**/*.tsx --fix",
-    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix-dry-run",
-    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint-js": "eslint ./*.js --fix-dry-run",
+    "lint-ts": "eslint src/**/*.ts --fix-dry-run",
+    "lint-tsx": "eslint src/**/*.tsx --fix-dry-run",
+    "lint:fix-js": "eslint ./*.js --fix",
+    "lint:fix-ts": "eslint src/**/*.ts --fix",
+    "lint:fix-tsx": "eslint src/**/*.tsx --fix",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix-dry-run",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -89,6 +89,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "validate-branch-name": {
+    "pattern": "^(master|main|develop){1}$|^(feature|fix|hotfix|release)/.+$",
+    "errorMsg": "Invalid branch name. Please use (master|main|develop) or (feature|fix|hotfix|release) ex. develop/ticket-id/branch-name or develop/branch-name or feature/ticket-id/branch-name or feature/branch-name."
   },
   "jest": {},
   "eslintConfig": {
