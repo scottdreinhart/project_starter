@@ -64,9 +64,27 @@
     "eject": "react-scripts eject",
     "stage": "serve -s build",
     "watch": "tsc -watch",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint-js": "npx eslint ./*.js --fix-dry-run",
+    "lint-ts": "npx eslint src/**/*.ts --fix-dry-run",
+    "lint-tsx": "npx eslint src/**/*.tsx --fix-dry-run",
+    "lint:fix-js": "npx eslint ./*.js --fix",
+    "lint:fix-ts": "npx eslint src/**/*.ts --fix",
+    "lint:fix-tsx": "npx eslint src/**/*.tsx --fix",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix-dry-run",
+    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "pnpm lint",
+      "pnpm prettier --write",
+      "pnpm test"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "jest": {},
   "eslintConfig": {
@@ -85,13 +103,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "pnpm lint",
-      "pnpm prettier --write",
-      "pnpm test"
     ]
   }
 }
