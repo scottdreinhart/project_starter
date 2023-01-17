@@ -80,9 +80,9 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "npm lint",
-      "npm prettier --write --ignore-unknown",
-      "npm test"
+      "eslint . --ext .js,.jsx,.ts,.tsx --fix-dry-run",
+      "npx prettier --write --ignore-unknown",
+      "npx test"
     ]
   },
   "husky": {
