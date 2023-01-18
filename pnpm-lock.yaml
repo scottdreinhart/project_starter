@@ -32,7 +32,7 @@ specifiers:
   '@types/testing-library__jest-dom': ^5.14.5
   '@typescript-eslint/eslint-plugin': ^5.48.2
   '@typescript-eslint/parser': ^5.48.2
-  commitizen: ^4.2.6
+  cz-conventional-changelog: 3.3.0
   eslint: ^8.32.0
   eslint-config-airbnb: 19.0.4
   eslint-config-airbnb-typescript: ^17.0.0
@@ -101,7 +101,7 @@ devDependencies:
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.48.2_caon6io6stgpr7lz2rtbhekxqy
   '@typescript-eslint/parser': 5.48.2_7uibuqfxkfaozanbtbziikiqje
-  commitizen: 4.2.6
+  cz-conventional-changelog: 3.3.0
   eslint: 8.32.0
   eslint-config-airbnb: 19.0.4_td5yecidacttadzxcsbd5t7tli
   eslint-config-airbnb-typescript: 17.0.0_4uspdq5wyqa45em4fomihl4hbu
