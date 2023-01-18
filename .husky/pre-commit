@@ -5,4 +5,3 @@ pnpm lint-staged
 pnpx validate-branch-name
 pnpm check-types
 pnpm audit
-pnpm outdated
