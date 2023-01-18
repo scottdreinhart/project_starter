@@ -1,7 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm lint-staged
-pnpx validate-branch-name
-pnpm check-types
-pnpm audit
+pnpx validate-branch-name && pnpm lint-staged && pnpm check-types && pnpm audit
