@@ -65,7 +65,7 @@
     "deploy": "",
     "check-types": "tsc",
     "start": "react-scripts start",
-    "test": "react-scripts test --watchAll=false --findRelatedTests --bail",
+    "test": "react-scripts test --watchAll=false --findRelatedTests src/** --bail",
     "eject": "react-scripts eject",
     "stage": "serve -s build",
     "watch": "tsc -watch",
@@ -85,7 +85,7 @@
     "**/*.{js,jsx,ts,tsx}": [
       "eslint **/*.{js,jsx,ts,tsx} --fix-dry-run",
       "npx prettier --write --ignore-unknown",
-      "npx test"
+      "npx react-scripts test --watchAll=false --findRelatedTests src/** --bail"
     ]
   },
   "husky": {
