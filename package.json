@@ -92,7 +92,7 @@
     "**/*.{js,jsx,ts,tsx}": [
       "eslint **/*.{js,jsx,ts,tsx} --fix-dry-run",
       "npx prettier --write --ignore-unknown",
-      "npx run test"
+      "npm run test"
     ]
   },
   "husky": {
