@@ -43,6 +43,7 @@
     "@typescript-eslint/parser": "^5.48.2",
     "customize-cra": "^1.0.0",
     "cz-conventional-changelog": "3.3.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -89,8 +90,19 @@
     "prepare": "husky install"
   },
   "lint-staged": {
+    "Linting *.js": [
+      "eslint **/*.js --fix-dry-run"
+    ],
+    "Linting *.jsx": [
+      "eslint **/*.jsx --fix-dry-run"
+    ],
+    "Linting *.ts": [
+      "eslint **/*.ts --fix-dry-run"
+    ],
+    "Linting *.tsx": [
+      "eslint **/*.tsx --fix-dry-run"
+    ],
     "**/*.{js,jsx,ts,tsx}": [
-      "eslint **/*.{js,jsx,ts,tsx} --fix-dry-run",
       "npx prettier --write --ignore-unknown",
       "npm run test"
     ]
