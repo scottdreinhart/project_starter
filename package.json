@@ -43,7 +43,6 @@
     "@typescript-eslint/parser": "^5.48.2",
     "customize-cra": "^1.0.0",
     "cz-conventional-changelog": "3.3.0",
-    "dotenv": "^16.0.3",
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -70,9 +69,10 @@
     "build": "react-app-rewired build",
     "deploy": "",
     "check-types": "tsc",
-    "start": "react-app-rewired start",
+    "start:production": "NODE_ENV=production react-app-rewired start",
+    "start:optimized": "NODE_ENV=production react-app-rewired build && serve -s build",
+    "start:development": "NODE_ENV=development react-app-rewired start",
     "eject": "react-app-rewired eject",
-    "stage": "serve -s build",
     "watch": "tsc -watch",
     "test": "react-app-rewired test --watchAll=false --findRelatedTests src/** --bail",
     "test:watch": "react-app-rewired test --watch --bail",
@@ -90,17 +90,17 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "Linting *.js": [
-      "eslint **/*.js --fix-dry-run"
+    "*.js": [
+      "eslint **/*.js --fix-dry-run --color"
     ],
-    "Linting *.jsx": [
-      "eslint **/*.jsx --fix-dry-run"
+    "*.jsx": [
+      "eslint **/*.jsx --fix-dry-run --color"
     ],
-    "Linting *.ts": [
-      "eslint **/*.ts --fix-dry-run"
+    "*.ts": [
+      "eslint **/*.ts --fix-dry-run --color"
     ],
-    "Linting *.tsx": [
-      "eslint **/*.tsx --fix-dry-run"
+    "*.tsx": [
+      "eslint **/*.tsx --fix-dry-run --color"
     ],
     "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write --ignore-unknown",
