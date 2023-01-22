@@ -1,0 +1,30 @@
+[
+  {
+    "text": "English",
+    "value": "en-US"
+  },
+  {
+    "text": "Español",
+    "value": "es-MX"
+  },
+  {
+    "text": "Deutsch",
+    "value": "de-DE"
+  },
+  {
+    "text": "日本語",
+    "value": "ja-JP"
+  },
+  {
+    "text": "中文",
+    "value": "zh-CN"
+  },
+  {
+    "text": "Français",
+    "value": "fr-FR"
+  },
+  {
+    "text": "Italiano",
+    "value": "it-IT"
+  }
+]

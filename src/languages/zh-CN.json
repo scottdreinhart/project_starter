@@ -1,0 +1,5 @@
+{
+  "app.header": "This is a Chinese Header",
+  "app.content": "This is Chinese Content.",
+  "app.footer": "This is a Chinese Footer. {copyrightMsg}"
+}
