@@ -1,8 +1,10 @@
 import React from 'react';
 import '../../assets/styles/App.scss';
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 // import PropTypes from 'prop-types';
 import { FormattedMessage, FormattedDate } from 'react-intl';
+import MainPage from '../MainPage';
 // import { LanguageChooser } from '../LanguageChooser/LanguageChooser';
 // import languages from '../../languages/languages.json';
 // import English from '../../languages/en-US.json';
@@ -18,49 +20,54 @@ function App() {
     <div>
       <hr />
       <p>
-        <p>
-          <FormattedMessage
-            id="app.header"
-            defaultMessage="This is a Default Header"
-          />
-        </p>
-        <p>
-          <FormattedMessage
-            id="app.content"
-            defaultMessage="This is Default Content"
-          />
-          <FormattedDate
-            value={Date.now()}
-            year="numeric"
-            month="long"
-            day="numeric"
-            weekday="long"
-          />
-        </p>
-        <p>
-          <FormattedMessage
-            id="app.footer"
-            defaultMessage="This is Default Footer. {copyrightMsg}"
-            values={{ copyrightMsg: 'Copyright 2023, all rights reserved.' }}
-          />
-          <hr />
-        </p>
+        <FormattedMessage
+          id="app.header"
+          defaultMessage="This is a Default Header"
+        />
       </p>
+
+      <p>
+        <FormattedMessage
+          id="app.content"
+          defaultMessage="This is Default Content"
+        />
+        <FormattedDate
+          value={Date.now()}
+          year="numeric"
+          month="long"
+          day="numeric"
+          weekday="long"
+        />
+      </p>
+
+      <p>
+        <FormattedMessage
+          id="app.footer"
+          defaultMessage="This is Default Footer. {copyrightMsg}"
+          values={{ copyrightMsg: 'Copyright 2023, all rights reserved.' }}
+        />
+      </p>
+      <hr />
       <p>
         You are running this application in <b>{process.env.NODE_ENV}</b> mode.
       </p>
+
       <p>
         REACT_APP_PRIVATE_KEY:&nbsp;
         {process.env.REACT_APP_PRIVATE_KEY}
       </p>
+
       <p>
         REACT_APP_PUBLIC_KEY:&nbsp;
         {process.env.REACT_APP_PUBLIC_KEY}
       </p>
+
       <p>
         REACT_APP_API_KEY:&nbsp;
         {process.env.REACT_APP_API_KEY}
       </p>
+
+      <MainPage />
     </div>
   );
 }
