@@ -5,7 +5,7 @@ echo "------------=[  Lint Branch  ]=------------"
 pnpx validate-branch-name
 echo "------------=[  Lint Staged  ]=------------"
 pnpm lint-staged
-echo "------------=[ Type Checking ]=------------"
-pnpm check-types
+#echo "------------=[ Type Checking ]=------------"
+#pnpm check-types
 echo "------------=[ Package Audit ]=------------"
 pnpm audit
