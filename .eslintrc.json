@@ -42,7 +42,7 @@
       },
       {
         "selector": "function",
-        "format": ["StrictPascalCase"]
+        "format": ["StrictPascalCase", "camelCase"]
       },
       {
         "selector": "variable",
@@ -89,6 +89,10 @@
     "object-shorthand": "off",
     "object-curly-newline": "off",
     "class-methods-use-this": "off",
+    "react/prop-types": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-named-as-default": "off",
+    "react/jsx-no-constructed-context-values": "off",
     "quotes": "off"
   }
 }
