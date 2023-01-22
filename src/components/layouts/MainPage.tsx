@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Header from './Header/Header';
-import Content from './Content/Content';
-import Content3 from './Content3';
-import Content4 from './Content4';
-import Content5 from './Content5';
-import Content6 from './Content6';
-import Footer from './Footer/Footer';
-import SideBar from './SideBar/SideBar';
+import Header from '../Header/Header';
+import Content from '../Content/Content';
+import Content3 from '../Content3';
+import Content4 from '../Content4';
+import Content5 from '../Content5';
+import Content6 from '../Content6';
+import Footer from '../Footer/Footer';
+import SideBar from '../SideBar/SideBar';
 
 function MainPage() {
   return (
