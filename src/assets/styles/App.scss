@@ -22,18 +22,17 @@
   }
 }
 
-  .bigRed {
-    color: red;
-    font-weight: 700;
-    font-size: 72pt
-  }
+.big-red {
+  color: red;
+  font-weight: 700;
+  font-size: 72pt;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 @keyframes App-logo-spin {
   from {
