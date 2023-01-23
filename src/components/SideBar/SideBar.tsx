@@ -5,7 +5,7 @@ import './SideBar.scss';
 
 function SideBar() {
   return (
-    <div>
+    <div className="sideBar">
       SideBar
       <FormattedMessage
         id="app.header"

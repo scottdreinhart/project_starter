@@ -12,43 +12,11 @@
   grid-template-areas:
     'Header'
     'Content'
-    'content3'
-    'content4'
-    'content5'
-    'content6'
+    'Content3'
+    'Content4'
+    'Content5'
+    'Content6'
     'Footer';
-}
-.Header {
-  grid-area: Header;
-  background-color: rgb(25, 118, 210); // #1976d2
-}
-.Content {
-  grid-area: Content;
-  background-color: rgb(23, 123, 66);
-}
-.content3 {
-  grid-area: content3;
-  background-color: rgb(2, 68, 46);
-}
-.content4 {
-  grid-area: content4;
-  background-color: rgb(15, 18, 106);
-}
-.content5 {
-  grid-area: content5;
-  background-color: rgb(134, 20, 121);
-}
-.content6 {
-  grid-area: content6;
-  background-color: rgb(44, 162, 18);
-}
-.Footer {
-  grid-area: Footer;
-  background-color: rgb(164, 34, 34);
-}
-.SideBar {
-  grid-area: SideBar;
-  background-color: rgb(73, 6, 82);
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,8 +31,8 @@
       'SideBar Content Content Content'
       'SideBar Content Content Content'
       'SideBar Content Content Content'
-      'SideBar content3 content4 content5'
-      'SideBar content3 content4 content6'
+      'SideBar Content3 Content4 Content5'
+      'SideBar Content3 Content4 Content6'
       'Footer Footer Footer Footer';
   }
 }
