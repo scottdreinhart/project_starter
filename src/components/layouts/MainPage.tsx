@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from '../Header/Header';
 import Content from '../Content/Content';
 import Content3 from '../Content3';

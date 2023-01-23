@@ -20,7 +20,7 @@
 }
 .Header {
   grid-area: Header;
-  background-color: rgb(9, 91, 64);
+  background-color: rgb(25, 118, 210); // #1976d2
 }
 .Content {
   grid-area: Content;
@@ -57,7 +57,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-areas:
       'Header Header Header Header'
       'SideBar Content Content Content'

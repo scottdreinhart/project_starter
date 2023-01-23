@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { StyledEngineProvider } from '@mui/material/styles';
 
 import { IntlProvider } from 'react-intl';
 import English from './languages/en-US.json';
+
 // import Spanish from './languages/es-MX.json';
 // import German from './languages/de-DE.json';
 // import Chinese from './languages/zh-CN.json';
@@ -29,9 +31,11 @@ const lang = English;
 
 root.render(
   <React.StrictMode>
-    <IntlProvider locale={local} messages={lang}>
-      <App />
-    </IntlProvider>
+    <StyledEngineProvider injectFirst>
+      <IntlProvider locale={local} messages={lang}>
+        <App />
+      </IntlProvider>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
 

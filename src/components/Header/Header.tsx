@@ -1,15 +1,8 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import AppBar from '../AppBar/AppBar';
 
 function Header() {
-  return (
-    <div>
-      <FormattedMessage
-        id="app.header"
-        defaultMessage="This is a Default Header"
-      />
-    </div>
-  );
+  return <AppBar />;
 }
 
 export default Header;
