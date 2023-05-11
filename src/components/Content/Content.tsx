@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage, FormattedDate } from 'react-intl';
 
+import ContactForm from '../ContactForm/ContactForm';
+
 import './Content.scss';
 
 function Content() {
@@ -17,6 +19,7 @@ function Content() {
         day="numeric"
         weekday="long"
       />
+      <ContactForm />
     </div>
   );
 }

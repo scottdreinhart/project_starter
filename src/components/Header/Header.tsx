@@ -1,14 +1,8 @@
 import React from 'react';
-import AppBar from '../AppBar/AppBar';
-
 import './Header.scss';
 
 function Header() {
-  return (
-    <div className="header">
-      <AppBar />
-    </div>
-  );
+  return <div className="header">...</div>;
 }
 
 export default Header;

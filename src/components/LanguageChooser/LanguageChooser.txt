@@ -1,0 +1,87 @@
+import React, { useState } from 'react';
+// import { IntlProvider } from 'react-intl';
+
+// import PropTypes from 'prop-types';
+
+// import languages from '../../languages/languages.json';
+// import English from '../../languages/en-US.json';
+// import Spanish from '../../languages/es-MX.json';
+// import German from '../../languages/de-DE.json';
+// import Chinese from '../../languages/zh-CN.json';
+// import Japanese from '../../languages/ja-JP.json';
+// import French from '../../languages/fr-FR.json';
+// import Italian from '../../languages/it-IT.json';
+
+// export const Context = React.createContext(null);
+
+// const local = navigator.language;
+// const lang = JSON.stringify(English);
+
+// export interface LanguageChooserProps = {
+//   children: PropTypes.string | ReactChild | ReactChild[] | ReactChildren | ReactChildren[];
+//   message: string;
+//   locale: string;
+// };
+
+// function LanguageChooser(props: LanguageChooserProps) {}
+//   const handleSelectionChanged = (e: React.ChangeEvent<HTMLSelectElement>) => {
+//     const newLocale = e.target.value;
+//     setLocale(newLocale);
+//     switch (locale) {
+//       case 'en-US':
+//         setMessage(JSON.stringify(English));
+//         break;
+//       case 'zh-CN':
+//         setMessage(JSON.stringify(Chinese));
+//         break;
+//       case 'ja-JP':
+//         setMessage(JSON.stringify(Japanese));
+//         break;
+//       case 'fr-FR':
+//         setMessage(JSON.stringify(French));
+//         break;
+//       case 'de-DE':
+//         setMessage(JSON.stringify(German));
+//         break;
+//       case 'es-MX':
+//         setMessage(JSON.stringify(Spanish));
+//         break;
+//       case 'it-IT':
+//         setMessage(JSON.stringify(Italian));
+//         break;
+//       default:
+//         setMessage(JSON.stringify(English));
+//         break;
+//     }
+//   };
+//   const [locale, setLocale] = useState<string>(local);
+//   const [message, setMessage] = useState<string>(lang);
+
+//   return (
+//     <div>
+//       <Context.Provider value={{ locale, handleSelectionChanged }}>
+//         <label htmlFor="LangChooser">
+//           <select
+//             id="LangChooser"
+//             value={locale}
+//             onChange={handleSelectionChanged}
+//           >
+//             {languages.map((language) => {
+//               return <option value={language.value}>{language.text}</option>;
+//             })}
+//           </select>
+
+//           <IntlProvider message={message} locale={locale}></IntlProvider>
+//         </label>
+//       </Context.Provider>
+//     </div>
+//   );
+// }
+
+// // return (
+// //   <Context.Provider value={{ isLocale, selectLang }}>
+// //     <IntlProvider messages={messages} islocale={isLocale}>
+// //       {props.children}
+// //     </IntlProvider>
+// //   </Context.Provider>
+// // );
