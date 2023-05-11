@@ -10,13 +10,13 @@
   grid-template-columns: 100%;
   grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr 1fr;
   grid-template-areas:
-    'Header'
-    'Content'
-    'Content3'
-    'Content4'
-    'Content5'
-    'Content6'
-    'Footer';
+    'header'
+    'content'
+    'content3'
+    'content4'
+    'content5'
+    'content6'
+    'footer';
 }
 
 @media only screen and (min-width: 768px) {
