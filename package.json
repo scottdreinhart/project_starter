@@ -15,7 +15,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
     "@types/react-table": "^7.7.14",
-    "lint": "0.8.19",
+    "lint": "1.0.0",
     "pg": "^8.10.0",
     "postcss-cli": "^10.1.0",
     "prop-types": "^15.8.1",
